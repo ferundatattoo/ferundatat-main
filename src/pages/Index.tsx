@@ -1,5 +1,18 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+
+// ETHEREAL Chat Widget API (loaded via ethereal-chat.js in index.html)
+declare global {
+  interface Window {
+    EtherealChat?: {
+      open: () => void;
+      close: () => void;
+      toggle: () => void;
+      isOpen: () => boolean;
+      destroy: () => void;
+    };
+  }
+}
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/Gallery";
@@ -33,13 +46,31 @@ const Index = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleBookingClick = () => setIsBookingOpen(true);
+  const handleBookingClick = () => {
+    // Open ETHEREAL chat widget instead of legacy booking wizard
+    if (window.EtherealChat?.open) {
+      window.EtherealChat.open();
+    } else {
+      // Fallback: if widget not loaded, open legacy booking
+      setIsBookingOpen(true);
+    }
+  };
   const handleLoadingComplete = () => setIsLoading(false);
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (params.get("book") === "1") {
-      setIsBookingOpen(true);
+      // Open ETHEREAL chat widget instead of legacy booking wizard
+      // Widget exposes window.EtherealChat.open() via ethereal-chat.js
+      const tryOpen = () => {
+        if (window.EtherealChat?.open) {
+          window.EtherealChat.open();
+        } else {
+          // Widget may not be loaded yet — retry briefly
+          setTimeout(tryOpen, 500);
+        }
+      };
+      setTimeout(tryOpen, 1000);
     }
   }, [location.search]);
 

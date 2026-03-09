@@ -15,7 +15,7 @@ import FloatingParticles from "@/components/FloatingParticles";
 
 import SectionTransition from "@/components/SectionTransition";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import StudioConcierge from "@/components/StudioConcierge";
+// StudioConcierge REMOVED — replaced by ETHEREAL ChatEmbed widget (ethereal-chat.js in index.html)
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import LoadingScreen from "@/components/LoadingScreen";
 
@@ -52,7 +52,7 @@ const Index = () => {
         
         {/* Floating Elements */}
         <FloatingWhatsApp />
-        <StudioConcierge />
+        {/* ETHEREAL ChatEmbed widget loaded via ethereal-chat.js in index.html */}
         <StickyCTABar onBookingClick={handleBookingClick} />
         <NewsletterPopup />
         <ExitIntentPopup onBookingClick={handleBookingClick} />

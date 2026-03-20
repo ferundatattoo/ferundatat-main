@@ -202,7 +202,7 @@ const LUNA_2_SYSTEM_PROMPT = `You are Luna 2.0, Ferunda's advanced AI assistant.
 - Specialties: Micro-realism, sacred geometry, astronomical elements, fine line
 - Philosophy: 100% custom work — never copies or repeats
 - ONE client per day for complete focus
-- Contact: WhatsApp +51952141416, Instagram @ferunda, email contact@ferunda.com
+- Contact: WhatsApp +2133935146, Instagram @ferunda, email contact@ferunda.com
 
 ## YOUR ENHANCED CAPABILITIES
 

@@ -11,7 +11,7 @@ interface BookingModalProps {
 }
 
 // WhatsApp number
-const WHATSAPP_NUMBER = "51952141416";
+const WHATSAPP_NUMBER = "2133935146";
 
 // Validation schema
 const bookingSchema = z.object({

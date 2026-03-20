@@ -112,7 +112,7 @@ const FAQ = () => {
               Still have questions?
             </p>
             <a
-              href="https://wa.me/51952141416?text=Hi%20Fernando%2C%20I%20have%20a%20question%20about%20getting%20a%20tattoo."
+              href="https://wa.me/2133935146?text=Hi%20Fernando%2C%20I%20have%20a%20question%20about%20getting%20a%20tattoo."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-body text-sm tracking-[0.2em] uppercase hover:bg-accent transition-colors"

@@ -157,7 +157,7 @@ const Footer = ({ className }: FooterProps) => {
             
             <div className="flex items-center gap-6">
               <a
-                href="https://wa.me/51952141416"
+                href="https://wa.me/2133935146"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppClick}

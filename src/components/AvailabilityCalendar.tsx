@@ -386,7 +386,7 @@ const AvailabilityCalendar = () => {
                   No available dates posted yet.
                 </p>
                 <a
-                  href="https://wa.me/51952141416?text=Hi%20Fernando%2C%20I%27m%20interested%20in%20booking%20a%20session.%20When%20is%20your%20next%20availability?"
+                  href="https://wa.me/2133935146?text=Hi%20Fernando%2C%20I%27m%20interested%20in%20booking%20a%20session.%20When%20is%20your%20next%20availability?"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 px-4 py-2 border border-border text-foreground font-body text-sm hover:bg-accent transition-colors"
